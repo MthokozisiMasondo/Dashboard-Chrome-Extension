@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 1px 2px #474747;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    margin-left: 50px;
+}
+
+.weather {
+    margin-right: 50px;
+}
+
