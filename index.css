@@ -16,6 +16,7 @@ body {
 
 h1 {
     text-align: center;
+    font-size: 50px;
 }
 
 
@@ -29,13 +30,14 @@ main {
 div.top {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
 }
 
 .left-side {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
-.weather {
+#weather {
     margin-right: 50px;
 }
 
@@ -44,6 +46,29 @@ div#crypto-top {
     gap: 10px;
     align-items: center;
 }
+
+p#weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-start;
+}
+
+p#weather > img {
+    width: 70px;
+}
+
+p.weather-city {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+}
+
+p.weather-temp {
+    margin: 0;
+}
+
 
 
 
