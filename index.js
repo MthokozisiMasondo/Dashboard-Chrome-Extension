@@ -37,6 +37,25 @@ document.getElementById("time").textContent = date.toLocaleTimeString("en-za", {
 
 setInterval(getCurrentTime, 1000)
 
+// Getting and displaying jokes
+function getJoke() {
+    fetch('https://icanhazdadjoke.com/', {
+    headers: {
+        'Accept': 'application/json'
+    }
+})
+.then(response => response.json())
+.then(data => {
+    document.getElementById("joke").innerHTML = `
+    <p>"${data.joke}"</p>
+    `
+})
+}
+
+getJoke()
+
+setInterval(getJoke, 15000)
+
 // Getting the location of the user
 navigator.geolocation.getCurrentPosition(position => {
     fetch(`https://apis.scrimba.com/openweathermap/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric`)
