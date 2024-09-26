@@ -39,3 +39,11 @@ div.top {
     margin-right: 50px;
 }
 
+div#crypto-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
